@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 
+*~
+
 # C extensions
 *.so
 
@@ -37,13 +39,12 @@ coverage.xml
 # Translations
 *.mo
 
-# Mr Developer
+# Project files:
 .mr.developer.cfg
 .project
 .pydevproject
-
-# Rope
 .ropeproject
+.projectfiles/
 
 # Django stuff:
 *.log
