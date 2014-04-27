@@ -1,0 +1,9 @@
+# Makefile for creating PySide ui. Make with: make -f Makefile_pyside
+
+SUBDIR=pyside_ui/
+
+all: $(SUBDIR)navigator_ui.py
+
+$(SUBDIR)navigator_ui.py : navigator.ui
+	pyside-uic $< > $@
+
