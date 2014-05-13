@@ -27,7 +27,8 @@ import cadnano
 try:
     from cadnanonavigator import NavigatorHandler
 except ImportError:
-    print "AttributeError: %s - this cadnano might be too old for this plugin, aborting load."
+    msg = "\nImportError: %s - either the cadnano version is too old for this plugin, or you are running without cadnano. Cadnano_navigator will not be available for cadnano as a plugin.\n" % (e, )
+    print msg
 else:
 
     def documentWindowWasCreatedSlot(document, win):
