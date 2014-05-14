@@ -1,9 +1,13 @@
 # Makefile for creating PySide ui. Make with: make -f Makefile_pyside
 
+# Define variables:
 SUBDIR=pyside_ui/
 
+# Define targets to make:
 all: $(SUBDIR)navigator_ui.py
 
+# For each target, define dependencies and what commands to use to make the target from those dependencies:
+# "pyside-uic $< > $@" is translated by make to: "pyside-uic navigator.ui > pyside_ui/navigator_ui.py"
 $(SUBDIR)navigator_ui.py : navigator.ui
 	pyside-uic $< > $@
 
