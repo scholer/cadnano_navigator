@@ -40,10 +40,10 @@ except AttributeError as e:
 
 #from cadnanonavigator_ui import Ui_Navigator
 if qt_available.lower() == 'pyside':
-    print "Autobreak: Using PySide."
+    print "Cadnano Navigator: Using PySide."
     from pyside_ui.navigator_ui import Ui_Dialog
 else:
-    print "Autobreak: Using PyQt4."
+    print "Cadnano Navigator: Using PyQt4."
     from navigator_ui import Ui_Dialog
 
 util.qtWrapImport('QtGui', globals(), ['QIcon', 'QPixmap', 'QAction'])
